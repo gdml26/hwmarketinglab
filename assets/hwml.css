@@ -1,0 +1,53 @@
+/* Health & Wellness Marketing Lab (HWML) Brand Foundation 1 tokens.
+   Sister brand to GDML BF2: same architecture (5 colors, 2 fonts, stacked wordmark, one accent per view),
+   different temperature. GDML = crimson on black, athletic. HWML = jade on white, clinical precision. */
+
+@font-face { font-family: "Archivo"; src: url("fonts/Archivo.ttf") format("truetype");
+  font-weight: 100 900; font-stretch: 62% 125%; font-display: block; }
+@font-face { font-family: "Galvji"; src: url("fonts/Galvji-Regular.ttf") format("truetype");
+  font-weight: 400; font-display: block; }
+@font-face { font-family: "Galvji"; src: url("fonts/Galvji-Bold.ttf") format("truetype");
+  font-weight: 700; font-display: block; }
+
+:root {
+  /* the five brand colors */
+  --jade: #0A6B5D;      /* signature: the one accent per view */
+  --black: #000000;
+  --white: #FFFFFF;
+  --mist: #DCE5E2;      /* cool light grey, GDML #DCDCDC with a jade tint */
+  --sage: #93A39E;      /* mid grey, GDML #959595 with a jade tint */
+  /* working shades (never shown as brand swatches) */
+  --jade-deep: #07504A;
+  --paper: #F5F8F7;
+  --ink-2: #2B3533;
+  --hair: #C9D4D0;
+
+  --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --body: "Galvji", "Helvetica Neue", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { font-family: var(--body); color: var(--black); background: var(--white); }
+
+/* Display type: Archivo at full expanded width. Wide, calm, exact. */
+.d { font-family: var(--display); font-stretch: 125%; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 0.005em; line-height: 0.92; }
+.d-light { font-family: var(--display); font-stretch: 125%; font-weight: 500; text-transform: uppercase; }
+
+/* ---------- Wordmark components (HTML so the real fonts render) ---------- */
+.wm { display: inline-flex; flex-direction: column; align-items: stretch; color: currentColor; }
+.wm .top { font-family: var(--display); font-stretch: 125%; font-weight: 800; text-transform: uppercase;
+  line-height: 0.9; letter-spacing: 0.01em; white-space: nowrap; display: flex; align-items: center; gap: .28em; }
+.wm .bot { display: flex; align-items: center; gap: .6em; margin-top: .32em; }
+.wm .bot .rule { flex: 1; height: .085em; background: currentColor; }
+.wm .bot span { font-family: var(--display); font-stretch: 125%; font-weight: 500; text-transform: uppercase;
+  letter-spacing: .52em; margin-right: -.52em; font-size: .36em; white-space: nowrap; }
+.wm.v2 .bot span { color: var(--jade); font-weight: 700; letter-spacing: .62em; }
+.wm.v2 .bot { justify-content: center; }
+.wm .amp { font-weight: 300; }
+.wm svg.pulse { height: .78em; width: auto; }
+
+.stack { display: inline-flex; flex-direction: column; font-family: var(--display); font-stretch: 125%;
+  font-weight: 800; text-transform: uppercase; line-height: .9; }
+.stack .sub { font-weight: 600; letter-spacing: .3em; font-size: .3em; margin-top: .55em; }
