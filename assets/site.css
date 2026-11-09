@@ -23,9 +23,10 @@
 
   /* header */
   header.site { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,.94); backdrop-filter: blur(10px); border-bottom: 1px solid var(--mint-2); }
-  .bar { display: flex; align-items: center; justify-content: space-between; height: 100px; gap: 28px; max-width: 1560px; }
-  .brand { text-decoration: none; flex: none; }
-  .brand .wm { font-size: 40.5px; }
+  .bar { display: flex; align-items: center; justify-content: space-between; gap: 28px; max-width: 1560px; padding-left: clamp(16px, 4.5vw, 64px); padding-right: clamp(16px, 4.5vw, 64px); }
+  .brand { text-decoration: none; flex: none; display: flex; }
+  /* clear space: 1.33em of the logo size above and below, about 1.5 times the height of its letters (Andy 11/8: option A, more space) */
+  .brand .wm { font-size: 40.5px; margin: 1.33em 0; }
   nav.main { display: flex; align-items: center; gap: 28px; font-size: 16px; font-weight: 700; white-space: nowrap; }
   .cta-top { white-space: nowrap; flex: none; padding: 14px 20px; }
   nav.main > a { text-decoration: none; }
@@ -204,7 +205,6 @@
   @media (max-width: 900px) {
     nav.main, .cta-top { display: none; }
     .burger { display: block; }
-    .bar { height: 80px; }
     .brand .wm { font-size: 31.5px; }
     .hero h1 { font-size: 10.2vw; }
     .hero.ind h1 { font-size: 10vw; }
