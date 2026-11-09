@@ -10,12 +10,13 @@
   font-weight: 700; font-display: block; }
 
 :root {
-  /* the five brand colors */
+  /* the six brand colors */
   --jade: #0A6B5D;      /* signature: the one accent per view */
   --black: #000000;
   --white: #FFFFFF;
   --mist: #DCE5E2;      /* cool light grey, GDML #DCDCDC with a jade tint */
   --sage: #93A39E;      /* mid grey, GDML #959595 with a jade tint */
+  --sun: #F6E39A;       /* soft yellow accent, added 11/8/26 from site feedback: highlights and the color wash */
   /* working shades (never shown as brand swatches) */
   --jade-deep: #07504A;
   --paper: #F5F8F7;
